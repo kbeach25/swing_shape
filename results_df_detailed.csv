@@ -1,0 +1,26 @@
+model,target,formula,R2,MAE,RMSE
+Linear Regression,batting_avg,Multiple output linear regression,-0.06260672595264394,0.021971139745946326,0.028187996410337656
+Linear Regression,slg_percent,Multiple output linear regression,0.219611246692327,0.052981376538843286,0.06729991660918734
+Linear Regression,on_base_percent,Multiple output linear regression,-0.09874638072820008,0.025771207118726887,0.03454421730393629
+Linear Regression,k_percent,Multiple output linear regression,0.5527627026496125,3.3067554664384824,4.148813899136583
+Linear Regression,bb_percent,Multiple output linear regression,0.11166560311438545,2.1481865108046234,2.7209746992397688
+Random Forest,batting_avg,Ensemble of decision trees,-0.1753380403424316,0.02426468749999998,0.02964553713250948
+Random Forest,slg_percent,Ensemble of decision trees,0.36730454276238056,0.04979656249999993,0.060597733842735306
+Random Forest,on_base_percent,Ensemble of decision trees,-0.15030520193791164,0.027252499999999964,0.035345421910057864
+Random Forest,k_percent,Ensemble of decision trees,0.35099973423198183,4.219593749999998,4.997782874060255
+Random Forest,bb_percent,Ensemble of decision trees,-0.00500997399931391,2.29475,2.894152758148748
+Support Vector Regression,batting_avg,Non-linear SVR (RBF),-1.306003043266557e-06,0.021718750000000002,0.027345017827750638
+Support Vector Regression,slg_percent,Non-linear SVR (RBF),0.22784733994707085,0.05132868264130894,0.06694383855041997
+Support Vector Regression,on_base_percent,Non-linear SVR (RBF),-0.13397426905632748,0.028062499999999983,0.03509362477715859
+Support Vector Regression,k_percent,Non-linear SVR (RBF),0.05005072986567227,5.215707146700689,6.046515268714086
+Support Vector Regression,bb_percent,Non-linear SVR (RBF),0.038165798880916535,2.2064666453131783,2.8313031499717125
+Gradient Boosting,batting_avg,Boosted decision trees,-0.22149152911092584,0.023704565485672065,0.030221996923265566
+Gradient Boosting,slg_percent,Boosted decision trees,0.23608699728324256,0.052859231251427385,0.06658570100736884
+Gradient Boosting,on_base_percent,Boosted decision trees,-0.27698793791480547,0.028637149934708776,0.037240887799399554
+Gradient Boosting,k_percent,Boosted decision trees,0.35009786149622046,4.042439159959916,5.001254212626406
+Gradient Boosting,bb_percent,Boosted decision trees,-0.200328826384363,2.6080249914090787,3.1629067075138306
+K-Nearest Neighbors,batting_avg,Instance-based learning,-0.25508522322856986,0.024106249999999996,0.03063476374970109
+K-Nearest Neighbors,slg_percent,Instance-based learning,-0.012431995864831569,0.05779374999999999,0.07665525911507963
+K-Nearest Neighbors,on_base_percent,Instance-based learning,-0.20051188536530096,0.027768750000000002,0.03610853430977226
+K-Nearest Neighbors,k_percent,Instance-based learning,0.36773629032605926,4.262499999999999,4.932920027732053
+K-Nearest Neighbors,bb_percent,Instance-based learning,-0.23375772609407353,2.4206250000000002,3.2066473925269676
