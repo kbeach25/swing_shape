@@ -3,3 +3,4 @@ pybaseball
 pandas
 numpy
 plotly
+sklearn
