@@ -611,6 +611,12 @@ def swing_visual_mod(df):
     avg_attack_angle, avg_vba, avg_swing_length, avg_bat_speed = bat_tracking(batter_df)
     ttc = calculate_time_to_contact(avg_bat_speed, avg_swing_length)
 
+    st.markdown('''
+    NOTE: Slash calculation and strike zone visual both account for the first two months
+    of the season only. Currently working to enable additional data processing.
+    '''
+               )
+    
     st.markdown(f'**{slash}**')
     st.markdown(f'**Bat Speed: {avg_bat_speed} mph**')
     st.markdown(f'**Time to Contact: {ttc} sec**')
