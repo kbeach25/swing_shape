@@ -20,7 +20,7 @@ st.title("Swing Shape Visualizer")
 # Get data from opening day until today, only pull and process data once
 def getData():
     #raw_df = statcast('2025-03-27', str(date.today()))
-    raw_df = statcast('2025-03-27', '2025-07-15')
+    raw_df = statcast('2025-03-27', '2025-06-30')
     
     ids = raw_df['batter'].dropna().unique()
     id_df = playerid_reverse_lookup(ids, key_type='mlbam')
