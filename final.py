@@ -35,7 +35,8 @@ def getData():
     return raw_df
 
 # Statcast data from statcast
-df = getData()
+# df = getData()
+df = pd.read_csv("season_data.csv")
 
 # Bat tracking data from csv
 tracking_df = pd.read_csv("tracking_data.csv")
