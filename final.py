@@ -15,6 +15,7 @@ from sklearn.multioutput import MultiOutputRegressor
 from sklearn.model_selection import train_test_split
 
 @st.cache_data
+st.title("Swing Shape Visualizer")
 # Get data from opening day until today, only pull and process data once
 def getData():
     raw_df = statcast('2025-03-27', str(date.today()))
