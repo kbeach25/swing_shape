@@ -1,7 +1,8 @@
 from pybaseball import statcast, playerid_reverse_lookup
 
 def getData():
-    raw_df = statcast('2025-03-27', str(date.today()))
+    #raw_df = statcast('2025-03-27', str(date.today()))
+    raw_df = statcast('2025-03-27', '2025-07-15')
     
     ids = raw_df['batter'].dropna().unique()
     id_df = playerid_reverse_lookup(ids, key_type='mlbam')
