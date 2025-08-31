@@ -1,7 +1,10 @@
 name: Run pull_data.py and Save Season Data
 
 on:
-  workflow_dispatch:   
+  workflow_dispatch:  
+
+permissions:
+  contents: write
 
 jobs:
   run-script:
