@@ -14,7 +14,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.multioutput import MultiOutputRegressor
 from sklearn.model_selection import train_test_split
 
-st.title("Swing Shape Visualizer")
+st.title("Swing Shape Analysis Tool")
 
 @st.cache_data
 # Get data from opening day until today, only pull and process data once
@@ -639,7 +639,7 @@ def swing_visual_mod(df):
     
 
 def main():
-    st.title("Swing Shape Analysis Tool")
+    #st.title("Swing Shape Analysis Tool")
 
     st.sidebar.title("Select a Module")
     module = st.sidebar.radio("Modules:", ["Introduction", "Swing Visualizer", "Swing Classification", "Expected Performance"])
