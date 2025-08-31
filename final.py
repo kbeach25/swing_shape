@@ -19,7 +19,8 @@ st.title("Swing Shape Visualizer")
 @st.cache_data
 # Get data from opening day until today, only pull and process data once
 def getData():
-    raw_df = statcast('2025-03-27', str(date.today()))
+    #raw_df = statcast('2025-03-27', str(date.today()))
+    raw_df = statcast('2025-03-27', '2025-07-15')
     
     ids = raw_df['batter'].dropna().unique()
     id_df = playerid_reverse_lookup(ids, key_type='mlbam')
@@ -34,8 +35,7 @@ def getData():
     return raw_df
 
 # Statcast data from statcast
-# df = getData()
-df = pd.read_csv("season_data.csv")
+df = getData()
 
 # Bat tracking data from csv
 tracking_df = pd.read_csv("tracking_data.csv")
